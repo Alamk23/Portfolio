@@ -1,0 +1,73 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?b08e285605559efede4c7ec0b6eb5fb6") format("truetype"),
+url("./flaticon.woff?b08e285605559efede4c7ec0b6eb5fb6") format("woff"),
+url("./flaticon.woff2?b08e285605559efede4c7ec0b6eb5fb6") format("woff2"),
+url("./flaticon.eot?b08e285605559efede4c7ec0b6eb5fb6#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b08e285605559efede4c7ec0b6eb5fb6#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "instagram": "\f101",
+    "facebook": "\f102",
+    "twitter": "\f103",
+    "worldwide": "\f104",
+    "paper-plane": "\f105",
+    "phone-call": "\f106",
+    "camera": "\f107",
+    "address": "\f108",
+    "download-arrow": "\f109",
+    "down-arrow": "\f10a",
+    "sms": "\f10b",
+    "right-arrow": "\f10c",
+);
+
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-worldwide:before {
+    content: map-get($flaticon-map, "worldwide");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon-map, "paper-plane");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-camera:before {
+    content: map-get($flaticon-map, "camera");
+}
+.flaticon-address:before {
+    content: map-get($flaticon-map, "address");
+}
+.flaticon-download-arrow:before {
+    content: map-get($flaticon-map, "download-arrow");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-sms:before {
+    content: map-get($flaticon-map, "sms");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
