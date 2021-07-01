@@ -30,7 +30,7 @@ const Navbar = () => {
                 activeClass="active"
                 to="home"
                 spy={true}
-                smooth={true}
+                smooth={false}
                 offset={-70}
                 duration={200}
               >
@@ -43,7 +43,7 @@ const Navbar = () => {
                 activeClass="active"
                 to="about"
                 spy={true}
-                smooth={true}
+                smooth={false}
                 offset={-70}
                 duration={200}
               >
@@ -56,7 +56,7 @@ const Navbar = () => {
                 activeClass="active"
                 to="services"
                 spy={true}
-                smooth={true}
+                smooth={false}
                 offset={-70}
                 duration={200}
               >
@@ -69,7 +69,7 @@ const Navbar = () => {
                 activeClass="active"
                 to="projects"
                 spy={true}
-                smooth={true}
+                smooth={false}
                 offset={-70}
                 duration={200}
               >
@@ -82,7 +82,7 @@ const Navbar = () => {
                 activeClass="active"
                 to="myblog"
                 spy={true}
-                smooth={true}
+                smooth={false}
                 offset={-70}
                 duration={200}
               >
@@ -95,7 +95,7 @@ const Navbar = () => {
                 activeClass="active"
                 to="contact"
                 spy={true}
-                smooth={true}
+                smooth={false}
                 offset={-70}
                 duration={200}
               >
@@ -137,7 +137,7 @@ const A = styled(Link)`
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: #000;
-
+  cursor: pointer;
   text-decoration: none;
   letter-spacing: 0.3em;
 

@@ -4,6 +4,58 @@ import { useInView } from "react-intersection-observer";
 
 import { motion, useAnimation } from "framer-motion";
 const Footer = () => {
+  const Links = ["Home", "About", "Services", "Projects", "MyBlog", "Contact"];
+  const Services = [
+    "Web Design",
+    "Web Development",
+    "Photography",
+    "App Development",
+    "UI/UX Design",
+    "Courses",
+  ];
+  const contact = [
+    "203 Fake St. Mountain View, San Francisco, California, USA",
+    "+2 392 3929 210",
+    "info@yourdomain.com",
+  ];
+
+  const List1 = [];
+  const List2 = [];
+  const List3 = [];
+
+  for (var i = 0; i < 6; i++) {
+    List1.push(
+      <a href="#" style={{ textDecoration: "none" }} key={i}>
+        <LI>
+          <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
+          {Links[i]}
+        </LI>
+      </a>
+    );
+  }
+
+  for (var c = 0; c < 6; c++) {
+    List2.push(
+      <a href="#" style={{ textDecoration: "none" }} key={c}>
+        <LI>
+          <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
+          {Services[c]}
+        </LI>
+      </a>
+    );
+  }
+
+  for (var x = 0; x < 3; x++) {
+    List3.push(
+      <a href="#" style={{ textDecoration: "none" }} key={x}>
+        <LI>
+          <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
+          {contact[x]}
+        </LI>
+      </a>
+    );
+  }
+
   const animation = useAnimation();
   const [ref, inView] = useInView();
 
@@ -80,32 +132,7 @@ const Footer = () => {
           >
             Links
           </h2>
-          <ul style={{ paddingLeft: "0" }}>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Home
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              About
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Services
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Project
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Blog
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Contact
-            </LI>
-          </ul>
+          <ul style={{ paddingLeft: "0" }}>{List1}</ul>
         </Column>
         <Column
           className="col-md-3"
@@ -120,32 +147,7 @@ const Footer = () => {
           >
             Services
           </h2>
-          <ul style={{ paddingLeft: "0" }}>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Web Design
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Web Development
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Photography
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              App development
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              UI/UX Design
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              Courses
-            </LI>
-          </ul>
+          <ul style={{ paddingLeft: "0" }}>{List2}</ul>
         </Column>
         <Column
           className="col-md-3"
@@ -158,22 +160,9 @@ const Footer = () => {
           <h2
             style={{ fontSize: "30px", color: "white", marginBottom: "3rem" }}
           >
-            Services
+            Have a Question?
           </h2>
-          <ul style={{ paddingLeft: "0" }}>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              203 Fake St. Mountain View, San Francisco, California, USA
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              +2 392 3929 210
-            </LI>
-            <LI>
-              <i className="flaticon-right-arrow" style={{ fontSize: 11 }}></i>{" "}
-              info@yourdomain.com
-            </LI>
-          </ul>
+          <ul style={{ paddingLeft: "0" }}>{List3}</ul>
         </Column>
       </div>
       <CC className="row">
